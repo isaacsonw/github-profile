@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
-    "build": "webpack --mode production --progress"
+    "build": "webpack --mode production --progress build --output public"
   },
-  "author": "Eze Bernardine May",
+  "author": "Obidi Isaac Wonah",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.3",
