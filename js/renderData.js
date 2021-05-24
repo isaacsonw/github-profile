@@ -1,5 +1,4 @@
 // get user name
-
 const renderUserprofileData = (data) => {
   const renderUserName = () => {
     if (data.username) {
