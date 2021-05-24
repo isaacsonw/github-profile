@@ -11,7 +11,7 @@ module.exports = {
     // app: ['@babel/polyfill', './src/index.js'],
     app: glob.sync('./src/**/*.js'),
   },
-  mode: 'production',
+  mode: 'development',
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'build'),
