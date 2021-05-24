@@ -14,7 +14,9 @@ module.exports = {
       {
         test: /\.es6$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+        },
         query: {
           presets: ['@babel/preset-env'],
         },
