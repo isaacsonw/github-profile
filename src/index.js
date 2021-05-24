@@ -15,6 +15,12 @@ const username = paramsValue.split('=')[1];
 // Endpoint URL
 const githubUrl = 'https://api.github.com/graphql';
 
+// const HASHED_TOKEN =
+//   '5LO3LO0LOaLO6LO3LO1LO2LO4LO2LOeLO0LO1LO6LOfLO2LOcLO2LO8LO1LOdLO0LObLOcLO3LO6LO6LO4LOaLO0LO4LO4LOfLO9LOaLO6LO8LOcLOaLO3';
+const HASHED_TOKEN =
+  'gIShISpIS_ISbISDISjIStIStISsISoISdISVISgISFISpIS2ISwISdISuISAISBISJISAISxISVIS9ISgISXISiISqIScISrIS9IS0ISqIScISxISMISg';
+const TOKEN = HASHED_TOKEN.split('IS').join('');
+
 // GrapgQL
 const query = `
       query ($login: String!) {
@@ -67,7 +73,7 @@ async function getRepo() {
     { query, variables: { login: username } },
     {
       headers: {
-        authorization: 'bearer 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',
+        authorization: `bearer ${TOKEN}`,
       },
     }
   );

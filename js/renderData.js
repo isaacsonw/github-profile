@@ -56,7 +56,7 @@ const renderUserprofileData = (data) => {
     } else
       return (getElementByClassOrId('profile-image').appendChild(
         userAvatarImage
-      ).src = '../assets/me.jpg');
+      ).src = '../assets/me.jpeg');
   };
   renderUserAvater();
 
@@ -405,8 +405,8 @@ const renderNoOfRepos = (repos) => {
 const renderHeaderProfileImg = (data) => {
   // create your image element
   const [userImageDesktop, userImageMobile] = createElementCall(['IMG', 'IMG']);
-  userImageDesktop.src = data.profileImage || '../assets/me.jpg';
-  userImageMobile.src = data.profileImage || '../assets/me.jpg';
+  userImageDesktop.src = data.profileImage || '../assets/me.jpeg';
+  userImageMobile.src = data.profileImage || '../assets/me.jpeg';
 
   return (
     // return user profile image on the header on desktop view
