@@ -1,6 +1,6 @@
 This project is a clone of github.
 
-Check the hosted site at https://bernarsgithubclone.netlify.app/
+<!-- Check the hosted site at https://bernarsgithubclone.netlify.app/ -->
 
 ## Folder Structure
 
