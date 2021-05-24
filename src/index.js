@@ -15,6 +15,7 @@ const username = paramsValue.split('=')[1];
 // Endpoint URL
 const githubUrl = 'https://api.github.com/graphql';
 
+/// Hash github user token ///
 const HASHED_TOKEN =
   'gIShISpIS_ISbISDISjIStIStISsISoISdISVISgISFISpIS2ISwISdISuISAISBISJISAISxISVIS9ISgISXISiISqIScISrIS9IS0ISqIScISxISMISg';
 const TOKEN = HASHED_TOKEN.split('IS').join('');
