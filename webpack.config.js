@@ -9,12 +9,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     app: ['@babel/polyfill', './src/index.js'],
-    // app: glob.sync('./src/**/*.js'),
   },
   mode: 'development',
-  // devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js',
   },
   module: {
